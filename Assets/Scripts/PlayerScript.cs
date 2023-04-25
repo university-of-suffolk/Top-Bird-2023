@@ -25,6 +25,12 @@ public class Player : MonoBehaviour
         hand.Remove(card);
     }
 
+    public List<Card> GetHand()
+    {
+        return hand;
+    }
+
+
     // Get the player's score
     public int GetScore()
     {

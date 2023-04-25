@@ -6,6 +6,16 @@ using UnityEngine.UI;
 
 // This script will manage the game's logic and flow, such as checking which category the players will compare and determining the winner of each round.
 
+public enum Category
+{
+    Uncommon,
+    Rare,
+    Epic,
+    Legendary,
+    Rainbow
+
+}
+
 
 public class GameManager : MonoBehaviour
 {
@@ -88,7 +98,6 @@ public class GameManager : MonoBehaviour
         return nextCard;
     }
 
-    // Compare the current card values and determine the winner
     public void CompareCards()
     {
         int player1Score = player1.GetScore();
@@ -101,23 +110,23 @@ public class GameManager : MonoBehaviour
         {
             case Category.Uncommon:
                 value1 = currentCard.uncommonValue;
-                value2 = GetRandomValue(player2.hand, Category.Uncommon);
+                value2 = GetRandomValue(player2.GetHand(), Category.Uncommon);
                 break;
             case Category.Rare:
                 value1 = currentCard.rareValue;
-                value2 = GetRandomValue(player2.hand, Category.Rare);
+                value2 = GetRandomValue(player2.GetHand(), Category.Rare);
                 break;
             case Category.Epic:
                 value1 = currentCard.epicValue;
-                value2 = GetRandomValue(player2.hand, Category.Epic);
+                value2 = GetRandomValue(player2.GetHand(), Category.Epic);
                 break;
             case Category.Legendary:
                 value1 = currentCard.legendaryValue;
-                value2 = GetRandomValue(player2.hand, Category.Legendary);
+                value2 = GetRandomValue(player2.GetHand(), Category.Legendary);
                 break;
             case Category.Rainbow:
                 value1 = currentCard.rainbowValue;
-                value2 = GetRandomValue(player2.hand, Category.Rainbow);
+                value2 = GetRandomValue(player2.GetHand(), Category.Rainbow);
                 break;
         }
 
@@ -161,6 +170,7 @@ public class GameManager : MonoBehaviour
         currentPlayer = currentPlayer == 1 ? 2 : 1;
         StartTurn();
     }
+
 
     // Get a random value for the specified category from the specified hand
     private int GetRandomValue(List<Card> hand, Category category)
