@@ -25,6 +25,8 @@ public class Card : MonoBehaviour
         Rainbow
     }
 
+    public Category category;
+
     // Get value by category
     public int GetValue(Category category)
     {
