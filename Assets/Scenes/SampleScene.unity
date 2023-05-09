@@ -5497,7 +5497,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1099360123}
         m_TargetAssemblyTypeName: CollectionsScript, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: CollectionsScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6138,7 +6138,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1946529911}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1946529913}
+        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
+        m_MethodName: SettingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1946529911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6186,6 +6198,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1946529908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6d694de71d38ef4a89e8048f4613f88, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fa54a06b1ae6c049936c16ac1737654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
