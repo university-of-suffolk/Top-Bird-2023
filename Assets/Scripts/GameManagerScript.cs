@@ -6,6 +6,16 @@ using UnityEngine.UI;
 
 // This script will manage the game's logic and flow, such as checking which category the players will compare and determining the winner of each round.
 
+public enum Category : int
+{
+    Uncommon = Card.Category.Uncommon,
+    Rare = Card.Category.Rare,
+    Epic = Card.Category.Epic,
+    Legendary = Card.Category.Legendary,
+    Rainbow = Card.Category.Rainbow
+}
+
+
 
 public class GameManager : MonoBehaviour
 {
@@ -88,7 +98,6 @@ public class GameManager : MonoBehaviour
         return nextCard;
     }
 
-    // Compare the current card values and determine the winner
     public void CompareCards()
     {
         int player1Score = player1.GetScore();
@@ -99,39 +108,40 @@ public class GameManager : MonoBehaviour
         // Determine which value to compare based on the current card's category
         switch (currentCard.category)
         {
-            case Category.Uncommon:
+            case Card.Category.Uncommon:
                 value1 = currentCard.uncommonValue;
-                value2 = GetRandomValue(player2.hand, Category.Uncommon);
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Uncommon);
                 break;
-            case Category.Rare:
+            case Card.Category.Rare:
                 value1 = currentCard.rareValue;
-                value2 = GetRandomValue(player2.hand, Category.Rare);
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Rare);
                 break;
-            case Category.Epic:
+            case Card.Category.Epic:
                 value1 = currentCard.epicValue;
-                value2 = GetRandomValue(player2.hand, Category.Epic);
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Epic);
                 break;
-            case Category.Legendary:
+            case Card.Category.Legendary:
                 value1 = currentCard.legendaryValue;
-                value2 = GetRandomValue(player2.hand, Category.Legendary);
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Legendary);
                 break;
-            case Category.Rainbow:
+            case Card.Category.Rainbow:
                 value1 = currentCard.rainbowValue;
-                value2 = GetRandomValue(player2.hand, Category.Rainbow);
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Rainbow);
                 break;
         }
+
 
         // Compare the values and update the score and UI
         if (value1 > value2)
         {
             if (currentPlayer == 1)
             {
-                player1.AddToScore();
+                player1.AddToScore(1);
                 resultText.text = "Player 1 wins!";
             }
             else
             {
-                player2.AddToScore();
+                player2.AddToScore(1);
                 resultText.text = "Player 2 wins!";
             }
         }
@@ -139,12 +149,12 @@ public class GameManager : MonoBehaviour
         {
             if (currentPlayer == 1)
             {
-                player2.AddToScore();
+                player2.AddToScore(1);
                 resultText.text = "Player 2 wins!";
             }
             else
             {
-                player1.AddToScore();
+                player1.AddToScore(1);
                 resultText.text = "Player 1 wins!";
             }
         }
@@ -162,8 +172,9 @@ public class GameManager : MonoBehaviour
         StartTurn();
     }
 
+
     // Get a random value for the specified category from the specified hand
-    private int GetRandomValue(List<Card> hand, Category category)
+    private int GetRandomValue(List<Card> hand, Card.Category category)
     {
         int value = 0;
         List<Card> categoryCards = new List<Card>();
@@ -179,25 +190,26 @@ public class GameManager : MonoBehaviour
             int randomIndex = Random.Range(0, categoryCards.Count);
             switch (category)
             {
-                case Category.Uncommon:
+                case Card.Category.Uncommon:
                     value = categoryCards[randomIndex].uncommonValue;
                     break;
-                case Category.Rare:
+                case Card.Category.Rare:
                     value = categoryCards[randomIndex].rareValue;
                     break;
-                case Category.Epic:
+                case Card.Category.Epic:
                     value = categoryCards[randomIndex].epicValue;
                     break;
-                case Category.Legendary:
+                case Card.Category.Legendary:
                     value = categoryCards[randomIndex].legendaryValue;
                     break;
-                case Category.Rainbow:
+                case Card.Category.Rainbow:
                     value = categoryCards[randomIndex].rainbowValue;
                     break;
             }
         }
         return value;
     }
+
 
     // End the game and display the winner
     private void EndGame()
@@ -215,5 +227,40 @@ public class GameManager : MonoBehaviour
             resultText.text = "It's a tie!";
         }
     }
+
+    private void UpdateUI()
+    {
+        int player1Score = player1.GetScore();
+        int player2Score = player2.GetScore();
+        int value1 = 0;
+        int value2 = 0;
+
+        // Update the UI text elements with the current card's category and values
+        switch (currentCard.category)
+        {
+            case Card.Category.Uncommon:
+                value1 = currentCard.uncommonValue;
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Uncommon);
+                break;
+            case Card.Category.Rare:
+                value1 = currentCard.rareValue;
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Rare);
+                break;
+            case Card.Category.Epic:
+                value1 = currentCard.epicValue;
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Epic);
+                break;
+            case Card.Category.Legendary:
+                value1 = currentCard.legendaryValue;
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Legendary);
+                break;
+            case Card.Category.Rainbow:
+                value1 = currentCard.rainbowValue;
+                value2 = GetRandomValue(player2.GetHand(), Card.Category.Rainbow);
+                break;
+        }
+
+    }
+
 }
 

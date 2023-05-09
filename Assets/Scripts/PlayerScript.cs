@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 // This script will define the player's attributes, such as their score, cards they hold, and their turn order.
-
 
 public class Player : MonoBehaviour
 {
@@ -25,6 +23,11 @@ public class Player : MonoBehaviour
         hand.Remove(card);
     }
 
+    public List<Card> GetHand()
+    {
+        return hand;
+    }
+
     // Get the player's score
     public int GetScore()
     {
@@ -35,6 +38,12 @@ public class Player : MonoBehaviour
     public void IncreaseScore()
     {
         score++;
+    }
+
+    // Add to the player's score
+    public void AddToScore(int amount = 1)
+    {
+        score += amount;
     }
 
     // Check if the player's hand is empty
