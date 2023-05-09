@@ -5079,7 +5079,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: START BUTTON
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5421,10 +5421,10 @@ GameObject:
   - component: {fileID: 1099360120}
   - component: {fileID: 1099360119}
   - component: {fileID: 1099360118}
-  - component: {fileID: 1099360121}
   - component: {fileID: 1099360122}
+  - component: {fileID: 1099360123}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: CollectionsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5495,8 +5495,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1099360121}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+      - m_Target: {fileID: 1099360123}
+        m_TargetAssemblyTypeName: CollectionsScript, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -5545,18 +5545,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099360116}
   m_CullTransparentMesh: 1
---- !u!114 &1099360121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099360116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6d694de71d38ef4a89e8048f4613f88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1099360122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5570,6 +5558,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 382381210}
+--- !u!114 &1099360123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099360116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95327997da54bda42aa75504fde9b382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1114286613
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,7 +5628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: COLLECTIONS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5830,7 +5830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: SETTINGS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5919,8 +5919,9 @@ GameObject:
   - component: {fileID: 1538984602}
   - component: {fileID: 1538984601}
   - component: {fileID: 1538984600}
+  - component: {fileID: 1538984603}
   m_Layer: 5
-  m_Name: CollectionButton
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5990,7 +5991,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1538984601}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1538984603}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1538984601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6029,6 +6042,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538984598}
   m_CullTransparentMesh: 1
+--- !u!114 &1538984603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538984598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d694de71d38ef4a89e8048f4613f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1946529908
 GameObject:
   m_ObjectHideFlags: 0
@@ -6041,6 +6066,7 @@ GameObject:
   - component: {fileID: 1946529912}
   - component: {fileID: 1946529911}
   - component: {fileID: 1946529910}
+  - component: {fileID: 1946529913}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -6151,3 +6177,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946529908}
   m_CullTransparentMesh: 1
+--- !u!114 &1946529913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946529908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d694de71d38ef4a89e8048f4613f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
