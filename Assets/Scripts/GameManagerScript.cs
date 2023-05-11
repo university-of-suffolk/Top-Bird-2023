@@ -30,16 +30,23 @@
 //    public Text player1ScoreText;
 //    public Text player2ScoreText;
 //    public Text resultText;
+//    public Text highScoreText;
+
+//    public Slider player1ScoreSlider;
+//    public Slider player2ScoreSlider;
 
 //    // Game state variables
 //    private Player player1;
 //    private Player player2;
 //    private int currentPlayer;
+//    private static int highScore;
 //    private Card currentCard;
 
 //    // Start the game
 //    void Start()
 //    {
+//        highScore = PlayerPrefs.SetInt ("HighScore", highScore);
+
 //        // Instantiate the players
 //        player1 = Instantiate(player1Prefab, transform).GetComponent<Player>();
 //        player1.playerID = 1;
@@ -102,6 +109,9 @@
 //    {
 //        int player1Score = player1.GetScore();
 //        int player2Score = player2.GetScore();
+//        player1ScoreSlider.Value += player1.GetScore();
+//        player2ScoreSlider.Value += player2.GetScore();
+
 //        int value1 = 0;
 //        int value2 = 0;
 
@@ -232,6 +242,21 @@
 //    {
 //        int player1Score = player1.GetScore();
 //        int player2Score = player2.GetScore();
+
+//        if (currentPlayer == 1 && player1Score > highScore)
+//        {
+//            highScore = player1Score;
+//            highScoreText.text = "HighScore" + " " + player1Score;
+//        }
+//        else if (currentPlayer == 2 && player2Score > highScore)
+//        {
+//            highScore = player2Score;
+//            highScoreText.text = "HighScore" + " " + player2Score;
+//        }
+
+//        PlayerPrefs.SetInt ("HighScore", highScore);
+//        PlayerPrefs.Save();
+
 //        int value1 = 0;
 //        int value2 = 0;
 
