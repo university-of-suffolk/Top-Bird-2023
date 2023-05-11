@@ -24,6 +24,14 @@ public class ThisCard : MonoBehaviour
     public Text weightText;
     public Text sizeText;
 
+    public Sprite thisSprite;
+    public Image thatImage;
+
+    public Image frame;
+
+
+
+
     void Start()
     {
         thisCard[0] = CardDataBase.cardList[thisId];
@@ -38,13 +46,47 @@ public class ThisCard : MonoBehaviour
         strength = thisCard[0].strength;
         weight = thisCard[0].weight;
         size = thisCard[0].size;
+        thisSprite = thisCard[0].thisImage;
 
         nameText.text = " " + card_Name;
-        wingspanText.text = " " + wingSpan;
-        speedText.text = " " + speed;
-        strengthText.text = " " + strength;
-        weightText.text = " " + weight;
-        sizeText.text = " " + size;
+        wingspanText.text = "WINGSPAN: " + wingSpan;
+        speedText.text = "SPEED: " + speed;
+        strengthText.text = "STRENGTH: " + strength;
+        weightText.text = "WEIGHT: " + weight;
+        sizeText.text = "SIZE: " + size;
+
+        thatImage.sprite = thisSprite;
+
+        if (thisCard[0].color == "Grey")
+        {
+            frame.GetComponent<Image>().color = new Color32(128, 128, 128, 255);
+        }
+
+        if (thisCard[0].color == "Blue")
+        {
+            frame.GetComponent<Image>().color = new Color32(135, 206, 250, 255);
+        }
+
+        if (thisCard[0].color == "Red")
+        {
+            frame.GetComponent<Image>().color = new Color32(220, 20, 60, 255);
+        }
+
+        if (thisCard[0].color == "Green")
+        {
+            frame.GetComponent<Image>().color = new Color32(173, 255, 47, 255);
+        }
+
+        if (thisCard[0].color == "Gold")
+        {
+            frame.GetComponent<Image>().color = new Color32(212, 175, 55, 255);
+        }
+
+        if (thisCard[0].color == "Rainbow")
+        {
+            Material rainbowMaterial = Resources.Load<Material>("Rainbow");
+            frame.GetComponent<Image>().material = rainbowMaterial;
+        }
 
     }
 
