@@ -456,8 +456,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -243.05261}
-  m_SizeDelta: {x: 0, y: -526.6556}
+  m_AnchoredPosition: {x: 0, y: -228.74733}
+  m_SizeDelta: {x: -0.0001, y: -472.4917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1216965141
 MonoBehaviour:
@@ -583,7 +583,7 @@ PrefabInstance:
     - target: {fileID: 733559163630877666, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: cb6454f686208924b9b175a8a34c9eb1, type: 3}
+      objectReference: {fileID: 12800000, guid: c05305f641b898b49b4fff4917842665, type: 3}
     - target: {fileID: 733559163630877666, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 14
@@ -603,7 +603,7 @@ PrefabInstance:
     - target: {fileID: 1495749236321540562, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: cb6454f686208924b9b175a8a34c9eb1, type: 3}
+      objectReference: {fileID: 12800000, guid: c05305f641b898b49b4fff4917842665, type: 3}
     - target: {fileID: 1495749236321540562, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 14
@@ -623,7 +623,7 @@ PrefabInstance:
     - target: {fileID: 3527526699680028522, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: cb6454f686208924b9b175a8a34c9eb1, type: 3}
+      objectReference: {fileID: 12800000, guid: c05305f641b898b49b4fff4917842665, type: 3}
     - target: {fileID: 3527526699680028522, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 22
@@ -735,14 +735,18 @@ PrefabInstance:
     - target: {fileID: 6527670546915836479, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: cb6454f686208924b9b175a8a34c9eb1, type: 3}
+      objectReference: {fileID: 12800000, guid: c05305f641b898b49b4fff4917842665, type: 3}
     - target: {fileID: 6527670546915836479, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7046386589350994477, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 92.1683
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046386589350994477, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -41.8
+      value: -32.067303
       objectReference: {fileID: 0}
     - target: {fileID: 7835164250262815065, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_SizeDelta.x
@@ -771,7 +775,7 @@ PrefabInstance:
     - target: {fileID: 9000238285423283969, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: cb6454f686208924b9b175a8a34c9eb1, type: 3}
+      objectReference: {fileID: 12800000, guid: c05305f641b898b49b4fff4917842665, type: 3}
     - target: {fileID: 9000238285423283969, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 14
@@ -783,7 +787,7 @@ PrefabInstance:
     - target: {fileID: 9142580711876860978, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: cb6454f686208924b9b175a8a34c9eb1, type: 3}
+      objectReference: {fileID: 12800000, guid: c05305f641b898b49b4fff4917842665, type: 3}
     - target: {fileID: 9142580711876860978, guid: 65f4fa32286d6174eb28fff2329599f3, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 14
@@ -832,7 +836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisCard:
   - {fileID: 0}
-  thisId: 31
+  thisId: 32
   id: 0
   card_Name: 
   wingSpan: 0
