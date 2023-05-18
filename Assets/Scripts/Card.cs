@@ -1,27 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+[System.Serializable]
 
-public class Card
+public class Card : MonoBehaviour
 {
-    public int cardIndex;
+
+    public int id;
     public string cardName;
-    public int speed;
+    public int wingspan;
     public int size;
     public int strength;
     public int weight;
-    public int wingspan;
-    public Sprite cardImage;
-    public string baseColor;
+    public int speed;
 
-    public Card(int index, string name, int spd, int sz, int str, int wt, int wspn, Sprite img, string color)
+    public Sprite thisImage;
+    public string color;
+
+    public Card()
     {
-        cardIndex = index;
-        cardName = name;
-        speed = spd;
-        size = sz;
-        strength = str;
-        weight = wt;
-        wingspan = wspn;
-        cardImage = img;
-        baseColor = color;
+
+    }
+
+    public Card (int Id, string CardName, int Wingspan, int Size, int Strength, int Weight, int Speed, Sprite ThisImage, string Color)
+    {
+        id = Id;
+        cardName = CardName;
+        wingspan = Wingspan;
+        size = Size;
+        strength = Strength;
+        weight = Weight;
+        speed = Speed;
+        thisImage = ThisImage;
+        color = Color;
     }
 }

@@ -235,6 +235,7 @@ MonoBehaviour:
   strengthText: {fileID: 0}
   weightText: {fileID: 0}
   wingspanText: {fileID: 0}
+  cardIndex: 0
 --- !u!1 &419414449
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardTemplate: {fileID: 354291496}
-  cardsParent: {fileID: 419414449}
+  numCards: 5
+  cardContainer: {fileID: 0}
 --- !u!224 &1629567526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -807,6 +809,18 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3457237727063290815, guid: f07b1c1c97d96db4587a6a627c180e95, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457237727063290815, guid: f07b1c1c97d96db4587a6a627c180e95, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457237727063290815, guid: f07b1c1c97d96db4587a6a627c180e95, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224576139200718167, guid: f07b1c1c97d96db4587a6a627c180e95, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -839,6 +853,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: c05305f641b898b49b4fff4917842665, type: 3}
+    - target: {fileID: 5327047034110591363, guid: f07b1c1c97d96db4587a6a627c180e95, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5523141073519499864, guid: f07b1c1c97d96db4587a6a627c180e95, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -892,14 +910,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1191867796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f329eac39253bf40be4d3ddfaa97d90, type: 3}
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColorImage: {fileID: 1938676308}
-  cardImage: {fileID: 1496993323}
-  cardNameText: {fileID: 6447559}
+  thisCard:
+  - {fileID: 0}
+  thisId: 32
+  id: 0
+  cardName: 
+  speed: 0
+  wingspan: 0
+  strength: 0
+  size: 0
+  weight: 0
+  nameText: {fileID: 6447559}
   speedText: {fileID: 1967541658}
-  sizeText: {fileID: 1624088302}
-  strengthText: {fileID: 1756726379}
-  weightText: {fileID: 466473880}
   wingspanText: {fileID: 672641342}
+  strengthText: {fileID: 1756726379}
+  sizeText: {fileID: 1624088302}
+  weightText: {fileID: 466473880}
+  thisSprite: {fileID: 0}
+  thatImage: {fileID: 1496993323}
+  frame: {fileID: 1938676308}
