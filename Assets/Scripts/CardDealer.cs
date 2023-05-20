@@ -42,8 +42,14 @@ public class CardDealer : MonoBehaviour
         CardUI cardUI = cardObject.GetComponent<CardUI>();
         if (cardUI != null)
         {
-            cardUI.ScaleDown(0.5f); // Scale down the card UI
-            // Additional setup or modifications to the instantiated card UI, if needed
+            cardUI.ScaleDown(0.75f); // Scale down the card UI
+
+            if (parent == aiPanel.transform)
+            {
+                GameObject cardCover = cardObject.transform.Find("CardCover").gameObject;
+                cardCover.SetActive(true); // Enable the CardCover GameObject
+            }
+
         }
     }
 

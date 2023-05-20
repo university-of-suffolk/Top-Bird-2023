@@ -12,6 +12,13 @@ public class CardUI : MonoBehaviour
     public Image cardImage;
     public Image frameImage;
 
+    private Vector3 originalPosition;
+
+    private void Awake()
+    {
+        originalPosition = transform.position;
+    }
+
     public void SetCardData(Card card)
     {
         nameText.text = card.cardName;
@@ -54,4 +61,18 @@ public class CardUI : MonoBehaviour
     {
         transform.localScale = new Vector3(scale, scale, 1f);
     }
+
+    public void OnPointerEnter()
+    {
+        // Smoothly move the card up when the mouse enters
+        transform.position = originalPosition + Vector3.up * 10f;
+    }
+
+    public void OnPointerExit()
+    {
+        // Smoothly move the card back to the original position when the mouse exits
+        transform.position = originalPosition;
+    }
+
+
 }
