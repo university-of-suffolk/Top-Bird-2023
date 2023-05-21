@@ -291,7 +291,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -486,6 +487,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 367965085}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &112290917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112290915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &112290918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112290915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 112290917}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 112290917}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &142169628
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +828,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -936,7 +1003,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -1126,7 +1194,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -1142,6 +1211,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1074853907}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &217802733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217802731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &217802734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217802731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 217802733}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 217802733}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &232568339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,6 +1362,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 66278683}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &285462302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285462300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &285462303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285462300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285462302}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285462302}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &287548482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +1728,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 910925804}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &353056242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353056240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &353056243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353056240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 353056242}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 353056242}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &354291496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,7 +2089,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -2030,6 +2295,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1093479949}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &433019084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433019082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &433019085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433019082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 433019084}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 433019084}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &449512121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2604,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -2366,6 +2697,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 578340996}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &514730776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514730774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &514730777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514730774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 514730776}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 514730776}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &540358325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,7 +3062,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -2682,6 +3079,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 455119341}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &577994895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577994893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &577994896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577994893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 577994895}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 577994895}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &578340996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2834,7 +3296,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -2926,6 +3389,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1063584844}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &614443880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614443878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &614443881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614443878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 614443880}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 614443880}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &689994806
 GameObject:
   m_ObjectHideFlags: 0
@@ -3172,6 +3700,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 203029598}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &766232375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766232373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &766232376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766232373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 766232375}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 766232375}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &770208841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3340,7 +3933,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -3514,7 +4108,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -3704,7 +4299,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -3796,6 +4392,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1827994711}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &906762953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906762951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &906762954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906762951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 906762953}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 906762953}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &908429186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -3806,6 +4467,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1809928466}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &908429188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908429186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &908429189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908429186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 908429188}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 908429188}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &910925804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3962,7 +4688,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -4054,6 +4781,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 204941150}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &944657727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944657725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &944657728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944657725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 944657727}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 944657727}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &983173619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -4064,6 +4856,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1218878083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &983173621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983173619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &983173622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983173619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 983173621}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 983173621}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &985154268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4232,7 +5089,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -4558,7 +5416,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -4732,7 +5591,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -4982,7 +5842,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -5150,6 +6011,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1595975139}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1129029281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129029279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1129029282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129029279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1129029281}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1129029281}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1167353993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,6 +6162,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1958234312}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1180617435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180617433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1180617436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180617433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1180617435}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1180617435}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1183178620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5246,6 +6237,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 783586916}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1183178622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183178620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1183178623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183178620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1183178622}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1183178622}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1195489693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5256,6 +6312,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1268815531}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1195489695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195489693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1195489696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195489693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1195489695}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1195489695}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1204727762
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,7 +6685,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -5738,7 +6860,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -5912,7 +7035,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -6066,7 +7190,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -6228,7 +7353,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -6347,6 +7473,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1658888219}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390886960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390886958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1390886961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390886958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390886960}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390886960}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1395834582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6433,6 +7624,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1587558539}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1398964641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398964638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1398964642}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1398964642}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1398964642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398964638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
 --- !u!1 &1412791120
 GameObject:
   m_ObjectHideFlags: 0
@@ -6677,7 +7933,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -6873,6 +8130,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1884464613}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1520439170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520439168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1520439171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520439168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1520439170}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1520439170}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1522732544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -6883,6 +8205,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 793511579}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1522732546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522732544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1522732547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522732544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1522732546}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1522732546}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1537223982 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -6893,6 +8280,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 985154268}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1537223984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537223982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1537223985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537223982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1537223984}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1537223984}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1548893152
 GameObject:
   m_ObjectHideFlags: 0
@@ -7291,7 +8743,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -7518,7 +8971,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -7534,6 +8988,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1321511841}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1662954323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662954321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1662954324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662954321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662954323}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662954323}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1677413214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7544,6 +9063,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 216454157}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1677413216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677413214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1677413217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677413214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1677413216}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1677413216}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1702904812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7732,7 +9316,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -7900,6 +9485,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 2031174208}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1722716357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722716355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1722716358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722716355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1722716357}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1722716357}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1760344183
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,6 +9636,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1367907785}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1784794130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784794128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1784794131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784794128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1784794130}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1784794130}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1794425551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7996,6 +9711,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 770208841}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1794425553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794425551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1794425554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794425551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1794425553}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1794425553}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1809928466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8180,7 +9960,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -8370,7 +10151,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -8386,6 +10168,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 573496527}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1844255341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844255339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1844255342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844255339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1844255341}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1844255341}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1884464613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8554,7 +10401,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -8570,6 +10418,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1702904812}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1944795174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944795172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &1944795175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944795172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1944795174}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1944795174}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1958234312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8738,7 +10651,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -8754,6 +10668,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1373918761}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2009237665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009237663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &2009237666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009237663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2009237665}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2009237665}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2031174208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8910,7 +10889,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -8993,6 +10973,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
   m_PrefabInstance: {fileID: 1449304012}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2113832446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113832444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  speedText: {fileID: 0}
+  wingspanText: {fileID: 0}
+  strengthText: {fileID: 0}
+  sizeText: {fileID: 0}
+  weightText: {fileID: 0}
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
+--- !u!114 &2113832447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113832444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2113832446}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2113832446}
+          m_TargetAssemblyTypeName: CardUI, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &4077615359294899955 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}

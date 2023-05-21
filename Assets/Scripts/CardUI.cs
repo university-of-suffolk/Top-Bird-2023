@@ -12,11 +12,11 @@ public class CardUI : MonoBehaviour
     public Image cardImage;
     public Image frameImage;
 
-    private Vector3 originalPosition;
+    private Vector3 hoverOffset;
 
     private void Awake()
     {
-        originalPosition = transform.position;
+        hoverOffset = Vector3.zero;
     }
 
     public void SetCardData(Card card)
@@ -64,15 +64,15 @@ public class CardUI : MonoBehaviour
 
     public void OnPointerEnter()
     {
-        // Smoothly move the card up when the mouse enters
-        transform.position = originalPosition + Vector3.up * 10f;
+        // Store the current position as the hover offset
+        hoverOffset = Vector3.up * 30f;
+        transform.position += hoverOffset;
     }
 
     public void OnPointerExit()
     {
-        // Smoothly move the card back to the original position when the mouse exits
-        transform.position = originalPosition;
+        // Reset the position by subtracting the hover offset
+        transform.position -= hoverOffset;
+        hoverOffset = Vector3.zero;
     }
-
-
 }
