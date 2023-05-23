@@ -12,11 +12,16 @@ public class CardUI : MonoBehaviour
     public Image cardImage;
     public Image frameImage;
 
+    private bool dealt = false;
+
     private Vector3 hoverOffset;
+    private Vector3 startingPoint;
+    private CardDealer cardDealer; // Reference to the CardDealer script
 
     private void Awake()
     {
         hoverOffset = Vector3.zero;
+        cardDealer = FindObjectOfType<CardDealer>(); // Find the CardDealer script in the scene
     }
 
     public void SetCardData(Card card)
@@ -75,4 +80,74 @@ public class CardUI : MonoBehaviour
         transform.position -= hoverOffset;
         hoverOffset = Vector3.zero;
     }
+
+    //public void OnPointerClick()
+    //{
+    //    // Check if the card is already in the player panel or AI panel
+    //    Transform playerPanelTransform = cardDealer.playerPanel.transform;
+    //    Transform aiPanelTransform = cardDealer.aiPanel.transform;
+    //    bool isInPlayerPanel = transform.IsChildOf(playerPanelTransform);
+    //    bool isInAiPanel = transform.IsChildOf(aiPanelTransform);
+
+    //    // Store the starting position
+    //    startingPoint = transform.position;
+
+    //    if (isInPlayerPanel || isInAiPanel)
+    //    {
+    //        // Move the card back to its original panel
+    //        transform.SetParent(isInPlayerPanel ? playerPanelTransform : aiPanelTransform);
+    //        transform.localScale = Vector3.one;
+    //    }
+    //    else
+    //    {
+    //        // Calculate the center position of the screen in world coordinates
+    //        Vector3 centerScreenPosition = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.nearClipPlane));
+
+    //        // Add an offset to the vertical position
+    //        centerScreenPosition.y += 450f;
+    //        centerScreenPosition.x += 975;
+
+    //        // Move the card to the center of the screen
+    //        transform.position = centerScreenPosition;
+    //    }
+    //}
+
+    public void OnPointerClick()
+    {
+        Transform playerPanelTransform = cardDealer.playerPanel.transform;
+        Transform aiPanelTransform = cardDealer.aiPanel.transform;
+        bool isInPlayerPanel = transform.IsChildOf(playerPanelTransform);
+        bool isInAiPanel = transform.IsChildOf(aiPanelTransform);
+
+        
+
+
+        // Calculate the center position of the screen
+        Vector3 centerScreenPosition = Camera.main.ViewportToWorldPoint(new Vector3(1f, 1f, Camera.main.nearClipPlane));
+
+        centerScreenPosition.y += 450;
+        centerScreenPosition.x += 975;
+
+        if(dealt)
+        {
+            transform.position = startingPoint;
+            dealt = false;
+        }
+        else
+        {
+            // Store the starting position
+            startingPoint = transform.position;
+            transform.position = centerScreenPosition;
+            dealt = true;
+        }
+
+    }
+
+    public void OnPointerClickAgain()
+    {
+        
+    }
+
+
+
 }

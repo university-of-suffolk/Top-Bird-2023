@@ -35,4 +35,6 @@ public class Card : MonoBehaviour
         thisImage = ThisImage;
         color = Color;
     }
+
+ 
 }
