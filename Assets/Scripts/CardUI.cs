@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardUI : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class CardUI : MonoBehaviour
     private Transform startingParent;
     private CardDealer cardDealer; // Reference to the CardDealer script
     private int startingSortingOrder;
+    private bool isEnlarged = false;
+    private Vector3 originalScale;
+    private Vector3 scaledDownScale;
 
     private void Awake()
     {
@@ -14,6 +18,8 @@ public class CardUI : MonoBehaviour
         cardDealer = FindObjectOfType<CardDealer>(); // Find the CardDealer script in the scene
         startingSortingOrder = GetComponent<Renderer>().sortingOrder;
         startingParent = transform.parent;
+        originalScale = transform.localScale;
+        scaledDownScale = originalScale * 0.75f; // Calculate the scaled-down scale
     }
 
     public void OnPointerEnter()
@@ -24,17 +30,6 @@ public class CardUI : MonoBehaviour
             hoverOffset = Vector3.up * 10f;
             transform.localPosition += hoverOffset;
             isHovering = true;
-        }
-    }
-
-    public void OnPointerExit()
-    {
-        if (startingParent == cardDealer.playerPanel.transform && isHovering)
-        {
-            // Reset the position by subtracting the hover offset
-            transform.localPosition -= hoverOffset;
-            hoverOffset = Vector3.zero;
-            isHovering = false;
         }
     }
 
@@ -64,17 +59,41 @@ public class CardUI : MonoBehaviour
             // Move the card to the center position only if it belongs to the playerPanel
             if (transform.IsChildOf(playerPanel.transform))
             {
-                // Move the card to the center position
-                transform.position = centerWorldPosition;
-
-                // Enlarge the card by 50%
-                transform.localScale *= 1.5f;
-
-                // Adjust the sorting order to ensure the card is on top
-                Renderer renderer = GetComponent<Renderer>();
-                if (renderer != null)
+                if (isEnlarged)
                 {
-                    renderer.sortingOrder = GetHighestSortingOrder() + 1;
+                    // Restore the card's original position and scale
+                    transform.SetParent(startingParent);
+                    transform.localPosition = Vector3.zero;
+                    transform.localScale = originalScale * 0.75f;
+
+                    // Adjust the sorting order to ensure the card is in the correct order
+                    Renderer renderer = GetComponent<Renderer>();
+                    if (renderer != null)
+                    {
+                        renderer.sortingOrder = startingSortingOrder;
+                    }
+
+                    // Refresh the layout of the playerPanel
+                    LayoutRebuilder.ForceRebuildLayoutImmediate(playerPanel.GetComponent<RectTransform>());
+
+                    isEnlarged = false;
+                }
+                else
+                {
+                    // Enlarge the card by 50%
+                    transform.localScale *= 1.5f;
+
+                    // Adjust the sorting order to ensure the card is on top
+                    Renderer renderer = GetComponent<Renderer>();
+                    if (renderer != null)
+                    {
+                        renderer.sortingOrder = GetHighestSortingOrder() + 1;
+                    }
+
+                    // Move the card to the center position of the camera
+                    transform.position = centerWorldPosition;
+
+                    isEnlarged = true;
                 }
             }
         }
@@ -83,6 +102,8 @@ public class CardUI : MonoBehaviour
             Debug.LogWarning("playerPanel not found!");
         }
     }
+
+
 
 
 
