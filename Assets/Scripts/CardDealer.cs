@@ -10,7 +10,7 @@ public class CardDealer : MonoBehaviour
     public List<GameObject> cardPrefabs; // List of card prefabs
     public GameObject aiTurnIndicator; // Reference to the AI turn indicator UI object
 
-    private bool playerGoesFirst = true; // Flag to determine if the player goes first or not
+    public bool playerGoesFirst = true; // Flag to determine if the player goes first or not
     public Text statNameText;
 
     private void Start()
@@ -94,50 +94,55 @@ public class CardDealer : MonoBehaviour
         }
     }
 
-    private IEnumerator AITurnCoroutine()
-{
-    aiTurnIndicator.SetActive(true); // Show AI turn indicator
+    public IEnumerator AITurnCoroutine()
+    {
+        aiTurnIndicator.SetActive(true); // Show AI turn indicator
 
-    yield return new WaitForSeconds(1f); // Delay to simulate AI thinking
+        yield return new WaitForSeconds(1f); // Delay to simulate AI thinking
 
-    // Print the number of cards in the AI's panel
-    Debug.Log("AI Panel Count: " + aiPanel.transform.childCount);
+        // Print the number of cards in the AI's panel
+        Debug.Log("AI Panel Count: " + aiPanel.transform.childCount);
 
-    // Select a random card from the AI's panel
-    int numCards = aiPanel.transform.childCount;
-    int randomIndex = Random.Range(0, numCards);
-    GameObject randomCard = aiPanel.transform.GetChild(randomIndex).gameObject;
+        GameObject randomCard;
+        string selectedStatName;
 
-    // Disable the CardCover game object
-    GameObject cardCover = randomCard.transform.Find("CardCover").gameObject;
-    cardCover.SetActive(false);
+        if (playerGoesFirst)
+        {
+            // Player goes first, AI selects a random card and the same named stat
+            if (aiPanel.transform.childCount > 0)
+            {
+                randomCard = aiPanel.transform.GetChild(Random.Range(0, aiPanel.transform.childCount)).gameObject;
+            }
+            else
+            {
+                Debug.LogWarning("No cards in AI panel!");
+                yield break; // Exit the coroutine if there are no cards in the AI panel
+            }
 
-    // Move the card to the left middle of the screen
-    StartCoroutine(MoveCardToPosition(randomCard.transform, new Vector3(-4f, 0f, 0f), 1f));
+            selectedStatName = cardPrefabs[0].transform.Find("Text/" + statNameText.text).name;
+        }
+        else
+        {
+            // AI goes first, player selects a card and the AI selects the predetermined stat
+            // Here, you can implement the logic to allow the player to select a card
+            // and assign the selectedStatName variable with the predetermined stat name.
+            // For simplicity, let's assume the predetermined stat is "Speed" for this example.
+            selectedStatName = "Speed";
+            if (aiPanel.transform.childCount > 0)
+            {
+                randomCard = aiPanel.transform.GetChild(Random.Range(0, aiPanel.transform.childCount)).gameObject;
+            }
+            else
+            {
+                Debug.LogWarning("No cards in AI panel!");
+                yield break; // Exit the coroutine if there are no cards in the AI panel
+            }
+        }
 
-    aiTurnIndicator.SetActive(false); // Hide AI turn indicator
+        // Rest of the code...
+    }
 
-    // Select a random stat from the card
-    int numStats = randomCard.transform.Find("Stats").childCount;
-    int randomStatIndex = Random.Range(0, numStats);
-    Transform stat = randomCard.transform.Find("Stats").GetChild(randomStatIndex);
-    Text statText = stat.GetComponent<Text>(); // Get the Text component
-    int statValue = int.Parse(statText.text);
-    string statName = statText.name.Replace("Text", "").Replace("Stat", ""); // Remove "Text" and "Stat" from the name
 
-    Debug.Log("AI selected Card: " + randomCard.name + " Stat: " + statName + " Value: " + statValue);
-
-    // Update the UI Text with the selected stat name
-    statNameText.text = statName + ": " + statValue;
-
-    // TODO: Implement the logic to compare the selected card with the player's card and determine the winner
-
-    // TODO: Implement the logic to switch turns between the player and the AI
-
-    // Example code to end the game after the AI's turn
-    // yield return new WaitForSeconds(2f); // Delay to show the result
-    // EndGame();
-}
 
 
 
@@ -164,4 +169,8 @@ public class CardDealer : MonoBehaviour
         cardTransform.localScale = targetScale;
     }
 
+    public void StartPlayerTurn()
+    {
+        Debug.Log("Starting players turn ...");
+    }
 }

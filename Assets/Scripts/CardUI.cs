@@ -1,3 +1,5 @@
+// CardUI.cs
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +13,12 @@ public class CardUI : MonoBehaviour
     private bool isEnlarged = false;
     private Vector3 originalScale;
     private Vector3 scaledDownScale;
+    private bool playerGoesFirst = true;
+    public GameObject confirmButtonsPrefab;
+    private GameObject confirmButtons;
+    public GameObject playerPanel;
+
+    public int selectedStatValue;
 
     private void Awake()
     {
@@ -63,7 +71,7 @@ public class CardUI : MonoBehaviour
                     // Restore the card's original position and scale
                     transform.SetParent(startingParent);
                     transform.localPosition = Vector3.zero;
-                    transform.localScale = scaledDownScale; // Change the scale to the scaled down size
+                    transform.localScale = scaledDownScale; // Change the scale to the scaled-down size
 
                     // Adjust the sorting order to ensure the card is in the correct order
                     Renderer renderer = GetComponent<Renderer>();
@@ -101,44 +109,122 @@ public class CardUI : MonoBehaviour
         {
             Debug.LogWarning("playerPanel not found!");
         }
+
+        if (startingParent == cardDealer.playerPanel.transform && isEnlarged)
+        {
+            // Create the confirm buttons
+            confirmButtons = Instantiate(confirmButtonsPrefab, transform.position + Vector3.right * 2.5f, Quaternion.identity);
+            confirmButtons.transform.SetParent(transform);
+        }
     }
-
-
-
-
-
-
 
 
     public void ScaleDown(float scale)
     {
-        transform.localScale = new Vector3(scale, scale, 1f);
-    }
-
-    private int GetHighestSortingOrder(GameObject parent)
-    {
-        int highestSortingOrder = int.MinValue;
-
-        CardUI[] cards = parent.GetComponentsInChildren<CardUI>();
-        foreach (CardUI card in cards)
-        {
-            Renderer cardRenderer = card.GetComponent<Renderer>();
-            if (cardRenderer != null)
-            {
-                highestSortingOrder = Mathf.Max(highestSortingOrder, cardRenderer.sortingOrder);
-            }
-        }
-
-        return highestSortingOrder;
+        transform.localScale *= scale;
     }
 
     public void SelectStat(string statName)
-{
-    Debug.Log("Player selected Stat: " + statName);
+    {
+        Debug.Log("Selected stat: " + statName);
 
-    // TODO: Implement the logic to compare the selected stat with the AI's stat and determine the winner
+        // Get the selected stat value from the player's card
+        Text statText = GetComponentInChildren<Text>();
+        if (statText != null && statText.gameObject.name == statName)
+        {
+            selectedStatValue = int.Parse(statText.text);
+            Debug.Log("Selected stat value: " + selectedStatValue);
 
-    // TODO: Implement the logic to switch turns between the player and the AI
-}
+            // Compare the selected stat value with the AI's stat value
+            CompareStats(statName);
+
+            // Determine the next turn
+            playerGoesFirst = (transform.parent == cardDealer.playerPanel.transform);
+
+            // Start the AI's turn if it's their turn
+            if (!playerGoesFirst)
+            {
+                cardDealer.StartCoroutine(cardDealer.AITurnCoroutine());
+            }
+        }
+    }
+
+    private void CompareStats(string statName)
+    {
+        // Retrieve the AI's stat value for the selected stat
+        int aiStatValue = GetRandomAIStatValue();
+
+        // Compare the player's stat value with the AI's stat value
+        if (selectedStatValue > aiStatValue)
+        {
+            Debug.Log("Player wins!");
+        }
+        else if (selectedStatValue < aiStatValue)
+        {
+            Debug.Log("AI wins!");
+        }
+        else
+        {
+            Debug.Log("It's a draw!");
+        }
+    }
+
+    private int GetRandomAIStatValue()
+    {
+        // Generate a random number between 1 and 10 as the AI's stat value
+        return Random.Range(1, 11);
+    }
+
+    public void ConfirmSelection(bool confirm)
+    {
+        if (confirm)
+        {
+            Debug.Log("Selection confirmed!");
+
+            // Remove the confirm buttons
+            Destroy(confirmButtons);
+
+            // Get the selected stat value from the player's card
+            Text statText = GetComponentInChildren<Text>();
+            if (statText != null)
+            {
+                selectedStatValue = int.Parse(statText.text);
+                Debug.Log("Selected stat value: " + selectedStatValue);
+
+                // Determine the next turn
+                playerGoesFirst = (transform.parent == cardDealer.playerPanel.transform);
+
+                // Start the AI's turn if it's their turn
+                if (!playerGoesFirst)
+                {
+                    cardDealer.StartCoroutine(cardDealer.AITurnCoroutine());
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Selection canceled!");
+
+            // Remove the confirm buttons
+            Destroy(confirmButtons);
+
+            // Return the card to its original position and scale
+            transform.SetParent(startingParent);
+            transform.localPosition = Vector3.zero;
+            transform.localScale = originalScale;
+
+            // Adjust the sorting order to ensure the card is in the correct order
+            Renderer renderer = GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                renderer.sortingOrder = startingSortingOrder;
+            }
+
+            // Refresh the layout of the playerPanel
+            LayoutRebuilder.ForceRebuildLayoutImmediate(playerPanel.GetComponent<RectTransform>());
+
+            isEnlarged = false;
+        }
+    }
 
 }

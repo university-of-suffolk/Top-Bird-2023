@@ -154,6 +154,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &406315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &9461054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -185,6 +199,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &9461062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9461054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &36060874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -216,6 +244,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &36060882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36060874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1001 &66278683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -446,6 +488,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &66494427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66494419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &66963095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -477,6 +533,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &66963103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66963095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &71839870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -508,6 +578,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &71839878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71839870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &86972776
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &112290918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,6 +940,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &112952324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112952316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &119819986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -884,6 +985,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &119819994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119819986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &123011186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -915,6 +1030,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &123011194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123011186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &134996243 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -946,6 +1075,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &134996251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134996243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &142169628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1187,7 @@ MonoBehaviour:
   - {fileID: 1390886958}
   - {fileID: 1944795172}
   aiTurnIndicator: {fileID: 1089494431}
+  playerGoesFirst: 1
   statNameText: {fileID: 1471819162}
 --- !u!1 &169709647 stripped
 GameObject:
@@ -1076,6 +1220,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &169709655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169709647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &172102729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -1107,6 +1265,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &172102737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172102729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &172369600 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -1138,6 +1310,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &172369608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172369600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &190058231 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -1169,6 +1355,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &190058239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190058231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1001 &203029598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1415,6 +1615,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &203055457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203055449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1001 &204941150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1645,6 +1859,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &208206170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208206162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1001 &216454157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1882,6 +2110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &217802734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2026,6 +2257,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &220953701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220953693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &232568339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,6 +2378,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &232681736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232681728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &252957477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2164,6 +2423,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &252957485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252957477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &253623349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2195,6 +2468,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &253623357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253623349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &256202642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2226,6 +2513,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &256202650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256202642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &278301559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2257,6 +2558,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &278301567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278301559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &281199832 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2288,6 +2603,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &281199840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281199832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &282879116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2319,6 +2648,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &282879124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282879116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &285462300 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2341,6 +2684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &285462303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2713,6 +3059,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &329149554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329149546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &343644579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +3181,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &348861877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348861869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &353056240 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -2843,6 +3217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &353056243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3063,6 +3440,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &358816639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358816631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1001 &367965085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3309,6 +3700,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &368697258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368697250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &389049089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3492,6 +3897,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &420474754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420474746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &427758038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -3523,6 +3942,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &427758046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427758038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &433019082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -3545,6 +3978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &433019085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3964,6 +4400,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &479748323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479748315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &488710616
 GameObject:
   m_ObjectHideFlags: 0
@@ -4071,6 +4521,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &490053257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490053249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &500920816 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -4102,6 +4566,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &500920824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500920816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &514730774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -4124,6 +4602,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &514730777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4268,6 +4749,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &536229054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536229046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &540358325
 GameObject:
   m_ObjectHideFlags: 0
@@ -4633,6 +5128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &577994896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4972,6 +5470,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &587859725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587859717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &602210192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5003,6 +5515,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &602210200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602210192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &610817372
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,6 +5627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &614443881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5245,6 +5774,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &617389493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617389485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &617769771 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5276,6 +5819,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &617769779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617769771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &623921450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5307,6 +5864,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &623921458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623921450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &631153567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5338,6 +5909,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &631153575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631153567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &649073250 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5369,6 +5954,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &649073258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649073250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &660672419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5400,6 +5999,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &660672427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660672419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &666336660 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5431,6 +6044,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &666336668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666336660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &683034344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5462,6 +6089,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &683034352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683034344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &683354218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5493,6 +6134,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &683354226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683354218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &689994806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,6 +6255,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &692476467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692476459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &694112435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5631,6 +6300,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &694112443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694112435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &707367542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5662,6 +6345,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &707367550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707367542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &708684344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5693,6 +6390,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &708684352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708684344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &721152109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5800,6 +6511,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &721660247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721660239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &726130642
 GameObject:
   m_ObjectHideFlags: 0
@@ -5916,6 +6641,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &727847398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727847390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &747214231 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5947,6 +6686,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &747214239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747214231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &750621120 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -5978,6 +6731,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &750621128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750621120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &764351222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -6009,6 +6776,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &764351230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764351222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &766232373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -6031,6 +6812,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &766232376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6374,6 +7158,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &772874487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772874479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &781385633 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -6405,6 +7203,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &781385641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781385633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1001 &783586916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6850,6 +7662,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &793774298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793774290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &836320493
 GameObject:
   m_ObjectHideFlags: 0
@@ -6957,6 +7783,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &877703737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877703729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &893477479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -6988,6 +7828,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &893477487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893477479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &902543750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7019,6 +7873,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &902543758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902543750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &905284883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7050,6 +7918,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &905284891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905284883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &905398480 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7081,6 +7963,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &905398488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905398480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &906762951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7103,6 +7999,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &906762954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7238,6 +8137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &908429189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7581,6 +8483,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &922214971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922214963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &928280490
 GameObject:
   m_ObjectHideFlags: 0
@@ -7688,6 +8604,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &933774103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933774095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &936835534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7719,6 +8649,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &936835542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936835534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &937445430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7750,6 +8694,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &937445438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937445430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &944657725 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7772,6 +8730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &944657728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7916,6 +8877,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &956545408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956545400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &970652306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7947,6 +8922,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &970652314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970652306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &975244332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -7978,6 +8967,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &975244340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975244332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &978696104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -8009,6 +9012,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &978696112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978696104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &983173619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -8031,6 +9048,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &983173622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8450,6 +9470,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &998942895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998942887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1009982916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -8481,6 +9515,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1009982924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009982916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1015164351
 GameObject:
   m_ObjectHideFlags: 0
@@ -8588,6 +9636,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1033036803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033036795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1039965611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -8619,6 +9681,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1039965619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039965611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1001 &1063584844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9124,6 +10200,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1078675018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078675010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1089494431
 GameObject:
   m_ObjectHideFlags: 0
@@ -9385,6 +10475,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1099781938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099781930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1100932652
 GameObject:
   m_ObjectHideFlags: 0
@@ -9492,6 +10596,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1104524307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104524299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1125261686
 GameObject:
   m_ObjectHideFlags: 0
@@ -9590,6 +10708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1129029282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9734,6 +10855,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1130042783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130042775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1152574796 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -9765,6 +10900,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1152574804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152574796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1158039758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -9796,6 +10945,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1158039766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158039758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1159914264 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -9827,6 +10990,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1159914272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159914264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1167353993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9934,6 +11111,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1179270311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179270303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1180617433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -9956,6 +11147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1180617436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10091,6 +11285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1183178623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10235,6 +11432,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1185245988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185245980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1194147444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -10266,6 +11477,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1194147452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194147444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1195489693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -10288,6 +11513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1195489696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10508,6 +11736,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1208685205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208685197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1216387335
 GameObject:
   m_ObjectHideFlags: 0
@@ -10814,6 +12056,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1246542924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246542916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1259920267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -10845,6 +12101,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1259920275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259920267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1266309119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -10876,6 +12146,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1266309127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266309119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1001 &1268815531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11106,6 +12390,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1270640956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270640948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1280963100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11137,6 +12435,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1280963108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280963100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1299916349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11168,6 +12480,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1299916357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299916349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1301424517 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11199,6 +12525,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1301424525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301424517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1318523570 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11230,6 +12570,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1318523578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318523570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1001 &1321511841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11460,6 +12814,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1329129170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329129162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1336930257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11491,6 +12859,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1336930265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336930257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1339253992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11522,6 +12904,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1339254000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339253992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1348227380 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11553,6 +12949,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1348227388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348227380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1352501743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11584,6 +12994,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1352501751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352501743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1359128829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -11615,6 +13039,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1359128837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359128829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1001 &1367907785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12139,6 +13577,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1381042676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381042668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1390611346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -12170,6 +13622,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1390611354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390611346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1390886958 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -12192,6 +13658,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1390886961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12464,6 +13933,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!212 &1398964644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12547,6 +14019,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1399582236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399582228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1407123534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -12578,6 +14064,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1407123542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407123534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1412791120
 GameObject:
   m_ObjectHideFlags: 0
@@ -12685,6 +14185,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1428706724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428706716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1435544458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -12716,6 +14230,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1435544466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435544458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1001 &1449304012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13131,6 +14659,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1475072367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475072359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1475569489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -13162,6 +14704,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1475569497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475569489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1479102395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -13193,6 +14749,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1479102403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479102395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1488546679 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -13224,6 +14794,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1488546687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488546679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1494095640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -13255,6 +14839,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1494095648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494095640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1502713890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -13286,6 +14884,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1502713898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502713890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1507686635
 GameObject:
   m_ObjectHideFlags: 0
@@ -13393,6 +15005,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1518097015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518097007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1520439168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -13415,6 +15041,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1520439171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13559,6 +15188,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1521135832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521135824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1522732544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -13581,6 +15224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1522732547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13716,6 +15362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1537223985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13936,6 +15585,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1554323220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554323212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1001 &1587558539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14120,7 +15783,8 @@ PrefabInstance:
       propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8914000960470384781, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
       insertIndex: -1
@@ -14356,6 +16020,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1621568058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621568050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1636740096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -14387,6 +16065,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1636740104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636740096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1639344776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -14418,6 +16110,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1639344784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639344776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1655062508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -14449,6 +16155,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1655062516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655062508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1001 &1658888219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14686,6 +16406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1662954324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14830,6 +16553,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1667730586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667730578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1675718281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -14861,6 +16598,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1675718289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675718281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1677413214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -14883,6 +16634,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1677413217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15027,6 +16781,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1691988009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691988001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1698850095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -15058,6 +16826,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1698850103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698850095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1001 &1702904812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15308,6 +17090,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1704558644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704558636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1707260541
 GameObject:
   m_ObjectHideFlags: 0
@@ -15415,6 +17211,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1718220557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718220549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1718902241
 GameObject:
   m_ObjectHideFlags: 0
@@ -15513,6 +17323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1722716358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15657,6 +17470,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1730350527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730350519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1736412148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -15688,6 +17515,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1736412156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736412148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1760344183
 GameObject:
   m_ObjectHideFlags: 0
@@ -15795,6 +17636,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1778180383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778180375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &1784794128 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -15817,6 +17672,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1784794131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15961,6 +17819,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1793669886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793669878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1794425551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -15983,6 +17855,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1794425554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16342,6 +18217,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1814947051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814947043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1821362761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16373,6 +18262,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1821362769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821362761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1825803493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16404,6 +18307,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1825803501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825803493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1001 &1827994711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16650,6 +18567,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1835037209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835037201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1835621440 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16681,6 +18612,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1835621448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835621440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1842784934 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16712,6 +18657,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1842784942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842784934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1844255339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16734,6 +18693,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1844255342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16878,6 +18840,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1847242264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847242256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1847918125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16909,6 +18885,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1847918133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847918125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1849669481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16940,6 +18930,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1849669489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849669481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1864677610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938322184316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -16971,6 +18975,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1864677618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864677610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1865535852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17002,6 +19020,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1865535860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865535852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1873171232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17033,6 +19065,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1873171240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873171232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Stength
+  selectedStat: 
 --- !u!1001 &1884464613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17263,6 +19309,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1891806801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891806793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1892002848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17294,6 +19354,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1892002856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892002848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &1893451732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17325,6 +19399,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1893451740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893451732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1896944210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17356,6 +19444,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1896944218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896944210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1935451873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17387,6 +19489,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1935451881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935451873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &1940327562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17418,6 +19534,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1940327570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940327562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1944795172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17440,6 +19570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &1944795175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17783,6 +19916,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1962470179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962470171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Speed
+  selectedStat: 
 --- !u!1 &1974569325 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937390435339, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17814,6 +19961,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1974569333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974569325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &1994936349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763938363287572, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17845,6 +20006,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &1994936357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994936349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &2000793026 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17876,6 +20051,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2000793034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000793026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &2009237663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -17898,6 +20087,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &2009237666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18042,6 +20234,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 72.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2014635065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014635057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Wingspan
+  selectedStat: 
 --- !u!1 &2016876868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -18073,6 +20279,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2016876876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016876868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strengtrh
+  selectedStat: 
 --- !u!1 &2017268765 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -18104,6 +20324,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2017268773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017268765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1001 &2031174208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18334,6 +20568,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2040381743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040381735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Size
+  selectedStat: 
 --- !u!1 &2040493975 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -18365,6 +20613,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2040493983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040493975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &2049437442
 GameObject:
   m_ObjectHideFlags: 0
@@ -18463,6 +20725,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2082775004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082774996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &2091543514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937120930873, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -18494,6 +20770,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2091543522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091543514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &2102650224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -18525,6 +20815,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2102650232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102650224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!1 &2113832444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2601065201681157424, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -18547,6 +20851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!114 &2113832447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18691,6 +20998,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.65, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2130161232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130161224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Strength
+  selectedStat: 
 --- !u!1 &2132195458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601763937606472316, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -18722,6 +21043,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50.7, y: 18.05}
   m_EdgeRadius: 0
+--- !u!114 &2132195466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132195458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877ac1e10e5c462488822f94ef2ecc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: Weight
+  selectedStat: 
 --- !u!224 &4077615359294899955 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443104777046833673, guid: 866e39e42e2910e4d8651a6b100c0a56, type: 3}
@@ -19012,6 +21347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButtonsPrefab: {fileID: 0}
+  playerPanel: {fileID: 1378135984}
+  selectedStatValue: 0
 --- !u!212 &7612668428337377742
 SpriteRenderer:
   m_ObjectHideFlags: 0
