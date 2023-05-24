@@ -50,13 +50,12 @@ public class CardUI : MonoBehaviour
 
         // Convert the center position from screen space to world space
         Vector3 centerWorldPosition = mainCamera.ScreenToWorldPoint(centerScreenPosition);
-        centerWorldPosition.z = 0f; // Set the z position to 0 to avoid any depth issues
 
         // Find the playerPanel in the scene hierarchy
         GameObject playerPanel = GameObject.Find("playerPanel");
         if (playerPanel != null)
         {
-            // Move the card to the center position only if it belongs to the playerPanel
+            // Move the card to the right middle position only if it belongs to the playerPanel
             if (transform.IsChildOf(playerPanel.transform))
             {
                 if (isEnlarged)
@@ -64,7 +63,7 @@ public class CardUI : MonoBehaviour
                     // Restore the card's original position and scale
                     transform.SetParent(startingParent);
                     transform.localPosition = Vector3.zero;
-                    transform.localScale = originalScale * 0.75f;
+                    transform.localScale = scaledDownScale; // Change the scale to the scaled down size
 
                     // Adjust the sorting order to ensure the card is in the correct order
                     Renderer renderer = GetComponent<Renderer>();
@@ -80,18 +79,19 @@ public class CardUI : MonoBehaviour
                 }
                 else
                 {
-                    // Enlarge the card by 50%
-                    transform.localScale *= 1.5f;
+                    // Enlarge the card by 25%
+                    transform.localScale = originalScale * 0.95f;
 
                     // Adjust the sorting order to ensure the card is on top
                     Renderer renderer = GetComponent<Renderer>();
                     if (renderer != null)
                     {
-                        renderer.sortingOrder = GetHighestSortingOrder() + 1;
+                        // Set the sorting order to a high value to make it appear on top
+                        renderer.sortingOrder = 999;
                     }
 
-                    // Move the card to the center position of the camera
-                    transform.position = centerWorldPosition;
+                    // Move the card to the right middle position of the camera
+                    transform.position = new Vector3(centerWorldPosition.x + 4f, centerWorldPosition.y, -1f);
 
                     isEnlarged = true;
                 }
@@ -107,13 +107,19 @@ public class CardUI : MonoBehaviour
 
 
 
-    private int GetHighestSortingOrder()
+
+
+
+    public void ScaleDown(float scale)
+    {
+        transform.localScale = new Vector3(scale, scale, 1f);
+    }
+
+    private int GetHighestSortingOrder(GameObject parent)
     {
         int highestSortingOrder = int.MinValue;
 
-        // Find all the cards in the scene
-        CardUI[] cards = FindObjectsOfType<CardUI>();
-
+        CardUI[] cards = parent.GetComponentsInChildren<CardUI>();
         foreach (CardUI card in cards)
         {
             Renderer cardRenderer = card.GetComponent<Renderer>();
@@ -126,8 +132,13 @@ public class CardUI : MonoBehaviour
         return highestSortingOrder;
     }
 
-    public void ScaleDown(float scale)
-    {
-        transform.localScale = new Vector3(scale, scale, 1f);
-    }
+    public void SelectStat(string statName)
+{
+    Debug.Log("Player selected Stat: " + statName);
+
+    // TODO: Implement the logic to compare the selected stat with the AI's stat and determine the winner
+
+    // TODO: Implement the logic to switch turns between the player and the AI
+}
+
 }
