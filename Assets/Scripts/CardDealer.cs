@@ -7,14 +7,18 @@ public class CardDealer : MonoBehaviour
 {
     public GameObject playerPanel;
     public GameObject aiPanel;
+    public GameObject randomCard;
     public List<GameObject> cardPrefabs; // List of card prefabs
     public GameObject aiTurnIndicator; // Reference to the AI turn indicator UI object
 
     private bool playerGoesFirst = true; // Flag to determine if the player goes first or not
     public Text statNameText;
 
+    public int randomIndex;
+
     private void Start()
     {
+
         DealCards();
 
         if (!playerGoesFirst)
@@ -105,8 +109,8 @@ public class CardDealer : MonoBehaviour
 
     // Select a random card from the AI's panel
     int numCards = aiPanel.transform.childCount;
-    int randomIndex = Random.Range(0, numCards);
-    GameObject randomCard = aiPanel.transform.GetChild(randomIndex).gameObject;
+    randomIndex = Random.Range(0, numCards);
+    randomCard = aiPanel.transform.GetChild(randomIndex).gameObject;
 
     // Disable the CardCover game object
     GameObject cardCover = randomCard.transform.Find("CardCover").gameObject;
@@ -161,5 +165,227 @@ public class CardDealer : MonoBehaviour
         // Set the scale of the card to the final target scale
         cardTransform.localScale = targetScale;
     }
+
+    //=================================================
+    //PARTICLES SECTION (SPERATE SCRIPT WASN'T WORKING)
+    //=================================================
+
+    public GameObject borderParticles;
+    public GameObject UncommonParticle;
+    public GameObject RareParticle;
+    public GameObject EpicParticle;
+    public GameObject LegendaryParticle;
+    public GameObject RainbowParticle;
+    public Material particleMaterial;
+
+
+    public void Update()
+    {
+        if (randomCard.name == "Card1(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card2(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card3(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card4(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card5(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card6(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card7(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card8(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card9(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card10(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card11(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card12(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card13(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card14(Clone)")
+        {
+            Common();
+        }
+        if (randomCard.name == "Card15(Clone)")
+        {
+            Common();
+        }
+
+        if (randomCard.name == "Card16(Clone)")
+        {
+            Uncommon();
+        }
+        if (randomCard.name == "Card17(Clone)")
+        {
+            Uncommon();
+        }
+        if (randomCard.name == "Card18(Clone)")
+        {
+            Uncommon();
+        }
+        if (randomCard.name == "Card19(Clone)")
+        {
+            Uncommon();
+        }
+        if (randomCard.name == "Card20(Clone)")
+        {
+            Uncommon();
+        }
+        if (randomCard.name == "Card21(Clone)")
+        {
+            Uncommon();
+        }
+        if (randomCard.name == "Card22(Clone)")
+        {
+            Uncommon();
+        }
+        if (randomCard.name == "Card23(Clone)")
+        {
+            Uncommon();
+        }
+
+
+        if (randomCard.name == "Card24(Clone)")
+        {
+            Rare();
+        }
+        if (randomCard.name == "Card25(Clone)")
+        {
+            Rare();
+        }
+        if (randomCard.name == "Card26(Clone)")
+        {
+            Rare();
+        }
+        if (randomCard.name == "Card27(Clone)")
+        {
+            Rare();
+        }
+
+        if (randomCard.name == "Card28(Clone)")
+        {
+            Epic();
+        }
+        if (randomCard.name == "Card29(Clone)")
+        {
+            Epic();
+        }
+
+        if (randomCard.name == "Card30(Clone)")
+        {
+            Legendary();
+        }
+        if (randomCard.name == "Card31(Clone)")
+        {
+            Legendary();
+        }
+
+        if (randomCard.name == "Card32(Clone)")
+        {
+            Rainbow();
+        }
+    }
+
+
+    public void Common()
+    {
+
+        borderParticles.SetActive(true);
+        UncommonParticle.SetActive(false);
+        RareParticle.SetActive(false);
+        EpicParticle.SetActive(false);
+        LegendaryParticle.SetActive(false);
+        RainbowParticle.SetActive(false);
+        particleMaterial.color = Color.black;
+
+    }
+
+    public void Uncommon()
+    {
+        borderParticles.SetActive(true);
+        UncommonParticle.SetActive(true);
+        RareParticle.SetActive(false);
+        EpicParticle.SetActive(false);
+        LegendaryParticle.SetActive(false);
+        RainbowParticle.SetActive(false);
+        particleMaterial.color = Color.gray;
+    }
+
+    public void Rare()
+    {
+        borderParticles.SetActive(true);
+        UncommonParticle.SetActive(false);
+        RareParticle.SetActive(true);
+        EpicParticle.SetActive(false);
+        LegendaryParticle.SetActive(false);
+        RainbowParticle.SetActive(false);
+        particleMaterial.color = Color.red;
+    }
+
+    public void Epic()
+    {
+        borderParticles.SetActive(true);
+        UncommonParticle.SetActive(false);
+        RareParticle.SetActive(false);
+        EpicParticle.SetActive(true);
+        LegendaryParticle.SetActive(false);
+        RainbowParticle.SetActive(false);
+        particleMaterial.color = Color.green;
+    }
+
+    public void Legendary()
+    {
+        borderParticles.SetActive(true);
+        UncommonParticle.SetActive(false);
+        RareParticle.SetActive(false);
+        EpicParticle.SetActive(false);
+        LegendaryParticle.SetActive(true);
+        RainbowParticle.SetActive(false);
+        particleMaterial.color = Color.yellow;
+
+    }
+
+    public void Rainbow()
+    {
+        borderParticles.SetActive(false);
+        UncommonParticle.SetActive(false);
+        RareParticle.SetActive(false);
+        EpicParticle.SetActive(false);
+        LegendaryParticle.SetActive(false);
+        RainbowParticle.SetActive(true);
+    }
+
+
 
 }
