@@ -19,7 +19,7 @@ public class CardUI : MonoBehaviour
         startingSortingOrder = GetComponent<Renderer>().sortingOrder;
         startingParent = transform.parent;
         originalScale = transform.localScale;
-        scaledDownScale = originalScale * 0.75f; // Calculate the scaled-down scale
+        scaledDownScale = originalScale * 1.00f; // Calculate the scaled-down scale
     }
 
     public void OnPointerEnter()
@@ -80,7 +80,7 @@ public class CardUI : MonoBehaviour
                 else
                 {
                     // Enlarge the card by 25%
-                    transform.localScale = originalScale * 0.95f;
+                    transform.localScale = originalScale * 1.25f;
 
                     // Adjust the sorting order to ensure the card is on top
                     Renderer renderer = GetComponent<Renderer>();

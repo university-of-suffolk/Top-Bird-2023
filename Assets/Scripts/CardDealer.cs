@@ -69,7 +69,7 @@ public class CardDealer : MonoBehaviour
         CardUI cardUI = cardObject.GetComponent<CardUI>();
         if (cardUI != null)
         {
-            cardUI.ScaleDown(0.75f); // Scale down the card UI
+            cardUI.ScaleDown(1.00f); // Scale down the card UI
 
             if (parent == aiPanel.transform)
             {
@@ -134,8 +134,6 @@ public class CardDealer : MonoBehaviour
 
     // TODO: Implement the logic to switch turns between the player and the AI
 
-    // Example code to end the game after the AI's turn
-    // yield return new WaitForSeconds(2f); // Delay to show the result
     // EndGame();
 }
 
