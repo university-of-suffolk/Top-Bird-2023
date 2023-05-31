@@ -34,12 +34,6 @@ public class Points : MonoBehaviour
         foreach(int i in pointOrder)
         {
             Debug.Log(i + " ");
-        }
-
-        pointOrder[0] = 5;
-        pointOrder[1] = 4;
-        pointOrder[2] = 3;
-        pointOrder[3] = 2;
-        pointOrder[4] = 1;
+        }        
     }
 }
