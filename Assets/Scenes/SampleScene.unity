@@ -5557,7 +5557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6933c9cb6414f4994ba8730d4060a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 382381210}
 --- !u!114 &1099360123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6026,6 +6025,7 @@ GameObject:
   - component: {fileID: 1538984601}
   - component: {fileID: 1538984600}
   - component: {fileID: 1538984603}
+  - component: {fileID: 1538984604}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -6098,9 +6098,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538984603}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 1538984604}
+        m_TargetAssemblyTypeName: StartButton, Assembly-CSharp
+        m_MethodName: GameScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6158,6 +6158,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6d694de71d38ef4a89e8048f4613f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1538984604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538984598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31758e20c73c9aa46a651b59de4768aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1946529908

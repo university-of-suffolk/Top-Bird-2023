@@ -7,14 +7,13 @@ public class SettingsScript : MonoBehaviour
 {
     public void SettingScreen()
     {
+        // Loads the "Settings" scene
         SceneManager.LoadScene("Settings");
-
     }
 
     public void ReturnToMenu()
     {
+        // Loads the "Samplescene" scene
         SceneManager.LoadScene("Samplescene");
     }
-
 }
-
