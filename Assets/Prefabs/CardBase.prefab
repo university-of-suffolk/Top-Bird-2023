@@ -457,14 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3509825f78d0a440a630e8028fb94e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 3968453222236674775}
-  speedText: {fileID: 509571404578050040}
-  wingspanText: {fileID: 3628104322147008780}
-  strengthText: {fileID: 7799723428121127777}
-  sizeText: {fileID: 7852342306833704878}
-  weightText: {fileID: 3690006052987626968}
-  cardImage: {fileID: 9217863337424146413}
-  frameImage: {fileID: 6074924615664907056}
+  playerPanelLocked: {fileID: 0}
 --- !u!1 &3855952719614922742
 GameObject:
   m_ObjectHideFlags: 0

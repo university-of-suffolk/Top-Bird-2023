@@ -9,8 +9,10 @@ public class CardUI : MonoBehaviour
     private CardDealer cardDealer; // Reference to the CardDealer script
     private int startingSortingOrder;
     private bool isEnlarged = false;
+    private bool locked = false;
     private Vector3 originalScale;
     private Vector3 scaledDownScale;
+    public GameObject playerPanelLocked;
 
     private void Awake()
     {
@@ -20,6 +22,22 @@ public class CardUI : MonoBehaviour
         startingParent = transform.parent;
         originalScale = transform.localScale;
         scaledDownScale = originalScale * 1.00f; // Calculate the scaled-down scale
+        playerPanelLocked = GameObject.Find("playerPanelLocked");
+        playerPanelLocked.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
+    
+
+    private void Update()
+    {
+        if (playerPanelLocked.GetComponent<SpriteRenderer>().enabled)
+        {
+            locked = true;
+        }
+        else
+        {
+            locked = false;
+        }
     }
 
     public void OnPointerEnter()
@@ -58,7 +76,7 @@ public class CardUI : MonoBehaviour
             // Move the card to the right middle position only if it belongs to the playerPanel
             if (transform.IsChildOf(playerPanel.transform))
             {
-                if (isEnlarged)
+                if (isEnlarged && locked)
                 {
                     // Restore the card's original position and scale
                     transform.SetParent(startingParent);
@@ -76,8 +94,9 @@ public class CardUI : MonoBehaviour
                     LayoutRebuilder.ForceRebuildLayoutImmediate(playerPanel.GetComponent<RectTransform>());
 
                     isEnlarged = false;
+                    playerPanelLocked.GetComponent<SpriteRenderer>().enabled = false;
                 }
-                else
+                if (!isEnlarged && !locked)
                 {
                     // Enlarge the card by 25%
                     transform.localScale = originalScale * 1.25f;
@@ -94,6 +113,7 @@ public class CardUI : MonoBehaviour
                     transform.position = new Vector3(centerWorldPosition.x + 4f, centerWorldPosition.y, -1f);
 
                     isEnlarged = true;
+                    playerPanelLocked.GetComponent<SpriteRenderer>().enabled = true;
                 }
             }
         }
