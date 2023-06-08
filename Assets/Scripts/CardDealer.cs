@@ -1,32 +1,58 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class CardDealer : MonoBehaviour
-{
+{    
     public GameObject playerPanel;
     public GameObject aiPanel;
     public GameObject randomCard;
     public List<GameObject> cardPrefabs; // List of card prefabs
-    public GameObject aiTurnIndicator; // Reference to the AI turn indicator UI object
+    public GameObject aiTurnIndicator; // Reference to the AI turn indicator UI object    
+    GameObject go;
 
     private bool playerGoesFirst = true; // Flag to determine if the player goes first or not
+    public bool cardEnlarger;
+    bool compare = false;
     public Text statNameText;
 
     public int randomIndex;
+    public int statValue;
+
+    public int points;
+    public int[] pointOrder;
+    int speedStatValue;
+    int sizeStatValue;
+    int weightStatValue;
+    int strengthStatValue;
+    int wingspanStatValue;
 
     private void Start()
     {
+        go = GameObject.Find("Go");
 
         DealCards();
 
         if (!playerGoesFirst)
         {
             StartCoroutine(AITurnCoroutine());
+        }               
+    }   
+
+    public void Compare()
+    {
+        if (go.GetComponent<Image>().enabled)
+        {
+            compare = true;
+        }
+        else
+        {
+            compare = false;
         }
     }
-
 
     private void DealCards()
     {
@@ -56,11 +82,11 @@ public class CardDealer : MonoBehaviour
                 aiHasCard32 = true;
             }
         }
-
+        StartCoroutine(AITurnCoroutine());
         // Start the AI turn if it has Card32
         if (aiHasCard32)
         {
-            StartCoroutine(AITurnCoroutine());
+            
         }
     }
 
@@ -98,7 +124,7 @@ public class CardDealer : MonoBehaviour
         }
     }
 
-    private IEnumerator AITurnCoroutine()
+    public IEnumerator AITurnCoroutine()
 {
     aiTurnIndicator.SetActive(true); // Show AI turn indicator
 
@@ -112,9 +138,6 @@ public class CardDealer : MonoBehaviour
     randomIndex = Random.Range(0, numCards);
     randomCard = aiPanel.transform.GetChild(randomIndex).gameObject;
 
-    // Disable the CardCover game object
-    GameObject cardCover = randomCard.transform.Find("CardCover").gameObject;
-    cardCover.SetActive(false);
 
     // Move the card to the left middle of the screen
     StartCoroutine(MoveCardToPosition(randomCard.transform, new Vector3(-4f, 0f, 0f), 1f));
@@ -126,20 +149,62 @@ public class CardDealer : MonoBehaviour
     int randomStatIndex = Random.Range(0, numStats);
     Transform stat = randomCard.transform.Find("Stats").GetChild(randomStatIndex);
     Text statText = stat.GetComponent<Text>(); // Get the Text component
-    int statValue = int.Parse(statText.text);
+    statValue = int.Parse(statText.text);
     string statName = statText.name.Replace("Text", "").Replace("Stat", ""); // Remove "Text" and "Stat" from the name
 
     Debug.Log("AI selected Card: " + randomCard.name + " Stat: " + statName + " Value: " + statValue);
 
-    // Update the UI Text with the selected stat name
-    statNameText.text = statName + ": " + statValue;
+        Transform speedStat = randomCard.transform.Find("Stats").transform.Find("SpeedStatText");
+        Text speedStatText = speedStat.GetComponent<Text>(); // Get the Text component
+        speedStatValue = int.Parse(speedStatText.text);
 
-    // TODO: Implement the logic to compare the selected card with the player's card and determine the winner
+        Transform sizeStat = randomCard.transform.Find("Stats").transform.Find("SizeStatText");
+        Text sizeStatText = sizeStat.GetComponent<Text>(); // Get the Text component
+        sizeStatValue = int.Parse(sizeStatText.text);
 
-    // TODO: Implement the logic to switch turns between the player and the AI
+        Transform weightStat = randomCard.transform.Find("Stats").transform.Find("WeightStatText");
+        Text weightStatText = weightStat.GetComponent<Text>(); // Get the Text component
+        weightStatValue = int.Parse(weightStatText.text);
 
-    // EndGame();
-}
+        Transform strengthStat = randomCard.transform.Find("Stats").transform.Find("StrengthStatText");
+        Text strengthStatText = strengthStat.GetComponent<Text>(); // Get the Text component
+        strengthStatValue = int.Parse(strengthStatText.text);
+
+        Transform wingspanStat = randomCard.transform.Find("Stats").transform.Find("WingspanStatText");
+        Text wingspanStatText = wingspanStat.GetComponent<Text>(); // Get the Text component
+        wingspanStatValue = int.Parse(wingspanStatText.text);
+
+        pointOrder = new int[] { speedStatValue, sizeStatValue, weightStatValue, strengthStatValue, wingspanStatValue };
+
+        Array.Sort(pointOrder);
+
+        if(speedStatValue == pointOrder[0])
+        {
+            points = 5;
+        }
+        if (speedStatValue == pointOrder[1])
+        {
+            points = 4;
+        }
+        if (speedStatValue == pointOrder[2])
+        {
+            points = 3;
+        }
+        if (speedStatValue == pointOrder[3])
+        {
+            points = 2;
+        }
+        if (speedStatValue == pointOrder[4])
+        {
+            points = 1;
+        }
+
+        // TODO: Implement the logic to compare the selected card with the player's card and determine the winner
+
+        // TODO: Implement the logic to switch turns between the player and the AI
+
+        // EndGame();
+    }
 
 
 
@@ -180,7 +245,18 @@ public class CardDealer : MonoBehaviour
 
 
     public void Update()
-    {
+    {        
+        // Disable the CardCover game object
+        GameObject cardCover = randomCard.transform.Find("CardCover").gameObject;
+        if (compare)
+        {
+            cardCover.SetActive(false);
+
+            // Update the UI Text with the selected stat name
+            statNameText.text = " " + statValue;
+        }
+
+
         if (randomCard.name == "Card1(Clone)")
         {
             Common();

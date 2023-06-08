@@ -8,11 +8,13 @@ public class CardUI : MonoBehaviour
     private Transform startingParent;
     private CardDealer cardDealer; // Reference to the CardDealer script
     private int startingSortingOrder;
-    private bool isEnlarged = false;
+    public bool isEnlarged = false;
     private bool locked = false;
     private Vector3 originalScale;
     private Vector3 scaledDownScale;
     public GameObject playerPanelLocked;
+    public GameObject buttons;
+    GameObject go;
 
     private void Awake()
     {
@@ -24,6 +26,8 @@ public class CardUI : MonoBehaviour
         scaledDownScale = originalScale * 1.00f; // Calculate the scaled-down scale
         playerPanelLocked = GameObject.Find("playerPanelLocked");
         playerPanelLocked.GetComponent<SpriteRenderer>().enabled = false;
+        buttons.SetActive(false);
+        go = GameObject.Find("Go");
     }
 
     
@@ -93,8 +97,10 @@ public class CardUI : MonoBehaviour
                     // Refresh the layout of the playerPanel
                     LayoutRebuilder.ForceRebuildLayoutImmediate(playerPanel.GetComponent<RectTransform>());
 
-                    isEnlarged = false;
+                    buttons.SetActive(false);
+                    isEnlarged = false;                    
                     playerPanelLocked.GetComponent<SpriteRenderer>().enabled = false;
+                    go.GetComponent<Image>().enabled = false;
                 }
                 if (!isEnlarged && !locked)
                 {
@@ -112,7 +118,8 @@ public class CardUI : MonoBehaviour
                     // Move the card to the right middle position of the camera
                     transform.position = new Vector3(centerWorldPosition.x + 4f, centerWorldPosition.y, -1f);
 
-                    isEnlarged = true;
+                    buttons.SetActive(true);
+                    isEnlarged = true;                    
                     playerPanelLocked.GetComponent<SpriteRenderer>().enabled = true;
                 }
             }
