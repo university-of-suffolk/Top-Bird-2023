@@ -18,6 +18,7 @@ public class CardDealer : MonoBehaviour
     public bool cardEnlarger;
     bool compare = false;
     public Text statNameText;
+    public Text aiPointsToWin;
 
     public int randomIndex;
     public int statValue;
@@ -178,26 +179,28 @@ public class CardDealer : MonoBehaviour
 
         Array.Sort(pointOrder);
 
-        if(speedStatValue == pointOrder[0])
+        if(statValue == pointOrder[0])
         {
             points = 5;
         }
-        if (speedStatValue == pointOrder[1])
+        if (statValue == pointOrder[1])
         {
             points = 4;
         }
-        if (speedStatValue == pointOrder[2])
+        if (statValue == pointOrder[2])
         {
             points = 3;
         }
-        if (speedStatValue == pointOrder[3])
+        if (statValue == pointOrder[3])
         {
             points = 2;
         }
-        if (speedStatValue == pointOrder[4])
+        if (statValue == pointOrder[4])
         {
             points = 1;
         }
+
+        StopCoroutine(AITurnCoroutine());
 
         // TODO: Implement the logic to compare the selected card with the player's card and determine the winner
 
@@ -205,9 +208,6 @@ public class CardDealer : MonoBehaviour
 
         // EndGame();
     }
-
-
-
 
     private IEnumerator MoveCardToPosition(Transform cardTransform, Vector3 targetPosition, float moveDuration)
     {
@@ -254,6 +254,8 @@ public class CardDealer : MonoBehaviour
 
             // Update the UI Text with the selected stat name
             statNameText.text = " " + statValue;
+
+            aiPointsToWin.text = points + " ";
         }
 
 
